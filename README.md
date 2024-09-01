@@ -28,6 +28,17 @@ ls ~/.foundry/keystores
 cast wallet list
 ```
 
+### Invoke Functions via Foundry cast
+```shell
+DEST=0x123abc
+cast send --account wallet1 --rpc-url ${ETHERE_SEPOLIA_RPC} DEST "set(uint256)" "777"
+```
+
+Query smart contract
+```shell
+cast call --rpc-url ${ETHERE_SEPOLIA_RPC} DEST "val()(uint256)"
+```
+
 ## Deployed Contracts
 #### Ethereum Sepolia
 
